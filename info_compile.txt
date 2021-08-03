@@ -1,0 +1,3 @@
+'latexmkrc' - env var for latexmc to delete .nav-like files (when doing latexmk -c)
+Compilation is - pdflatex, biber, pdflatex, pdflatex or latexmk -pdf presentation.tex
+Requires biber, texlive-bibtex-extra on ubuntu

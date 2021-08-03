@@ -1,0 +1,151 @@
+% \documentclass[aspectratio=469]{beamer}
+\documentclass[aspectratio=169, 10pt, notes]{beamer}
+%% Using biber
+\usepackage[backend=biber, bibencoding=utf8, citestyle=authoryear]{biblatex}
+% \usepackage[backend=biber, bibencoding=utf8, style={numeric, authoryear}, citestyle={authoryear-icomp, authoryear, authortitle, verbose}, block=ragged]{biblatex}
+\addbibresource{slides_template.bib}
+
+%% Using Biblatex
+% \usepackage[citestyle=verbose]{biblatex}
+% \bibliography{presentation}
+% \bibliographystyle{plain}
+
+
+\usepackage{nicefrac}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{fancybox}
+\usepackage{comment}
+\usepackage{gensymb}
+% Unused Themes and Packages
+\begin{comment}
+    \usepackage{url}
+    \def\UrlBreaks{\do\/\do-}
+    \usepackage{subfigure}
+    \usepackage{wrapfig}
+
+
+    \usetheme{Berkeley} % lot whitespace 3/5
+    \usetheme{Frankfurt} %bullets in header also, full width 4/5
+    \usetheme{Goettingen} %alright right column
+    \usetheme{Hannover} %alright left column
+    \usetheme{Warsaw}
+    \usetheme{CambridgeUS}
+
+
+    \usetheme{Copenhagen}
+    \usetheme{EastLansing}
+    \usetheme{Ilmenau} %takes too much vspace if many subsections
+    \usetheme{Pittsburgh} %very plain
+    \usetheme{Antibes} % treelike nav
+
+    \usepackage{beamerthemesplit}
+    \usepackage{beamerthemebars}
+    \usepackage{beamerthemetree}
+
+    \usecolortheme{dolphin} %dark blue sidebar, nice contrast
+    \usecolortheme{seahorse} %light blue
+    \usecolortheme{beetle} %nice dull gray background
+    \usecolortheme{beaver} %light gray, nice and sharp
+    \usecolortheme{whale} %dark sharp blue black, nice contrast
+    \usecolortheme{crane} %yellow, smooth, MT defense
+    \usecolortheme{orchid} % inner color
+
+    %% Inner and Outer Good Themes
+    \useinnertheme[shadow]{rounded}
+    \useoutertheme{infolines}
+    \usefonttheme{default}
+    \mode<presentation>
+    \mode<presentation>{\usetheme{CambridgeUS}}
+
+
+
+    \setbeamertemplate{footline}[text line]{A Sample Talk}
+
+    \mode<presentation> % What purpose does this serve?
+\end{comment}
+
+\usetheme{Frankfurt}
+\usecolortheme{dolphin}
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+% \setbeamertemplate{footline}[frame number]
+% for frame number from (https://newbedev.com/how-to-insert-page-number-in-beamer-navigation-symbols)
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \small{\insertframenumber/\inserttotalframenumber}
+}
+
+
+
+% \setbeameroption{show notes}
+% \usepackage{pgfpages}
+% \setbeameroption{show notes on second screen}
+
+\setbeamercovered{dynamic} %overlays slightly visible
+% \setbeamercovered{invisible} %overlays invisible
+
+%%% At the beginning of sections, show title in blurred background
+% \AtBeginSection[]
+% {
+%     \begin{frame}{Next Section}
+%         % \begin{multicols}{2}
+%             \tableofcontents[currentsection]
+%         % \end{multicols}    
+%     \end{frame}
+% }
+
+\title[Short Title]{Full Title}
+\subtitle{Subtitle}
+\author[Sai Theja K.]{Sai Theja K.}
+\institute[Fluidyn]{Fluidyn Inc.}
+\date{} % \date{\today}
+% \titlegraphic
+%     {
+%         \centering
+%         \includegraphics[width=2cm]{../figures/logo.jpg}
+%         % \hspace*{4.75cm}~%
+%         % \includegraphics[width=2cm]{../logo.jpg}
+%     }
+\begin{document}
+
+\frame{\titlepage}
+
+% Can add speaker's notes like this. Check it out. 
+% \note{
+%     \begin{itemize}
+%         \item Some note
+%         \item See if this is presented on a dry run
+%         \item Read title, my name, Sir, HPCL, Thanks
+%     \end{itemize}
+%     }
+
+\section[Outline]{}
+
+% \frame{{Table of Contents}\tableofcontents}
+\begin{frame}{Table of Contents}
+    \begin{multicols}{2}
+        \tableofcontents
+    \end{multicols}    
+\end{frame}
+
+\section[Introduction]{Introduction}
+\frame{1111111111111111}
+
+\section[Section 1]{Section 1}
+\frame{2222222222222222}
+
+\section[Section 2]{Section 2}
+\frame{3333333333333333}
+
+\section[Section 3]{Section 3}
+\frame{2222222222222222}
+
+\section[Section 4]{Section 4}
+\frame{1111111111111111}
+
+\end{document}
